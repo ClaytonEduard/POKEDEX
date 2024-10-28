@@ -3,7 +3,7 @@ const pokeapi = {};
 // converter o modelo da pokeApi para um modelo personalizado
 function convertPokeApiDetailsToPokemon(pokeDetail) {
   const pokemon = new Pokemon();
-  pokemon.number = pokeDetail.order;
+  pokemon.number = pokeDetail.id;
   pokemon.name = pokeDetail.name;
 
   //destruct
